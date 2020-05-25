@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #303960;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1vh;
+  align-items: center;
+}
+
+form > * {
+  margin-bottom: 5%;
+}
+
+input {
+  height: 2.5rem;
+  width: 80%;
+  margin-right: 0;
+  border: 5% solid #ccc;
+  font-size: large;
+  padding-left: 5%;
+}
+
+#add-btn {
+  height: 3rem;
+  width: 20%;
+  margin-left: 0;
+  font-size: 2rem;
+  background-color: #f79071;
+  border: 0;
+}
+
+.to-do-container {
+  width: 80%;
+  display: flex;
+  background-color: #2fc4b2;
+  color: #f4f4f4;
+  margin-bottom: 7px;
+  box-shadow: 0px 2px 7px rgb(124, 124, 124);
+  padding: 0 2%;
+  justify-content: space-between;
+}
+
+#to-do-item {
+  width: 75%;
+  word-break: break-all;
+}
+#date-time {
+  margin-top: 0;
+  padding: 0 auto;
+  font-size: 0.6em;
+}
+
+#delete-btn {
+  text-align: center;
+  width: 25%;
+  background-color: #30a198af;
+  border-left: 0.1em solid #222;
+  cursor: pointer;
+}
+
+#delete-btn > p {
+  padding-left: 10%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
