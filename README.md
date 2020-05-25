@@ -1,4 +1,4 @@
-#Full Stack To-Do App
+# Full Stack To-Do App
 
 - **Mongo**
 - **Express**
@@ -7,7 +7,7 @@
 
 ---
 
-##Installation
+## Installation
 
 1. Clone the repository
 
