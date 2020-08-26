@@ -10,11 +10,11 @@ const ToDoList = props => {
         // const list = await fetch('http://localhost:5000/todos/').then(response => response.json()).catch(error => {
         //     console.log(error.name);
         // });
-        setToDoList(await fetch('http://localhost:3001/todos/').then(response => response.json()));
+        setToDoList(await fetch('http://localhost:5000/todos/').then(response => response.json()));
     }
 
     const addToList = async (newContent) => {
-        setToDoList(await fetch('http://localhost:3001/todos/', {
+        setToDoList(await fetch('http://localhost:5000/todos/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -26,7 +26,7 @@ const ToDoList = props => {
 
     };
     const removeFromList = async id => {
-        setToDoList(await fetch('http://localhost:3001/todos/', {
+        setToDoList(await fetch('http://localhost:5000/todos/', {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'
