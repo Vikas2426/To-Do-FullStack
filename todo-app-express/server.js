@@ -4,14 +4,12 @@ const mongoose = require("mongoose");
 const router = require("./Routes");
 const cors = require("cors");
 const app = express();
-const dbUrl = process.env.DATABASE_URL;
-const serverPort = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb+srv://vikas-admin:atlasPassword@cluster0.xbah5.mongodb.net/ToDoApp", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("Database Connected")
   })
@@ -25,4 +23,4 @@ app.get("/", (req, res) => {
 
 app.use("/todos", router);
 
-app.listen(serverPort, () => console.log(`Server Started on ${serverPort}`));
+app.listen(process.env.PORT, () => console.log(`Server Started on ${process.env.PORT}`));
