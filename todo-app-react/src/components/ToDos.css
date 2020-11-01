@@ -1,0 +1,11 @@
+.todo-item {
+  font-size: 1.2em;
+}
+
+.date-time {
+  font-size: 0.8em;
+}
+
+.delete-btn {
+  cursor: pointer;
+}

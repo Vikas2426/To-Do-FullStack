@@ -1,0 +1,24 @@
+form {
+  display: flex;
+}
+
+
+@media (min-width: 700px) {
+  form {
+    width: 40vw;
+  }
+
+  input {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 699px) {
+  form {
+    width: 85vw;
+  }
+
+  input {
+    width: 80% !important;
+  }
+}
