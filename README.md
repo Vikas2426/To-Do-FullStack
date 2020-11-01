@@ -16,7 +16,7 @@
    1. `npm install`
    1. `node server.js`
 
-**If the server throws an error just rename the test.env --> .en**
+**If the server throws an error just rename the test.env --> .env**
 
 3. cd to-do-react
 
